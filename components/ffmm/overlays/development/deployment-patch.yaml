@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: ffmm
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-doaj-tenant/byoc-app-uqxh/ffmm@sha256:9730be15ca33dc598611e946177b8823c97097f787c2972ede1b59de87d690a6
+        name: my-java-quarkus
+        resources: {}
+status: {}
